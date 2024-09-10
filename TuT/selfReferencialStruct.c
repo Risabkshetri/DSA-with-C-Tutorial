@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Self-referential structure definition
 struct Node {
     int data;
     struct Node* next;
