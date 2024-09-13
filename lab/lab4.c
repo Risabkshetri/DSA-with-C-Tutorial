@@ -30,13 +30,13 @@ int countNodes(struct Node* head);
 
 // Main function
 int main() {
-    struct Node* head = NULL;
+    
     int choice, data, position;
 
     while (1) {
         printf("\nMenu:\n");
         printf("1. Insert at the end\n");
-        printf("2. Insert at the beginning\n");
+        printf("2.struct Node* head = NULL; Insert at the beginning\n");
         printf("3. Insert at a specific position\n");
         printf("4. Delete at the end\n");
         printf("5. Delete at the beginning\n");
