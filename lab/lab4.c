@@ -30,7 +30,7 @@ int countNodes(struct Node* head);
 
 // Main function
 int main() {
-    
+    struct Node* head = NULL;
     int choice, data, position;
 
     while (1) {
