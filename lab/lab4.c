@@ -147,7 +147,7 @@ void insertAtPosition(struct Node** head, int data, int position) {
 
     newNode->next = temp->next;
     temp->next = newNode;
-}
+} 
 
 // Function to delete at the end of the list
 void deleteAtEnd(struct Node** head) {

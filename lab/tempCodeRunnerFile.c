@@ -1,4 +1,4 @@
-#include<stdio.h>
+//#include<stdio.h>
 
 // int main(){
 //     int arr[5], pos, i;
@@ -17,3 +17,36 @@
 //         printf("%d ", arr[i]);
 //     }
 // }
+
+
+#include <stdio.h>
+#include<stdlib.h>
+
+struct Node{
+    int data; 
+    struct Node* next;
+};
+
+void insertionAtBeginning(struct Node** head, int data);
+
+int createNode(struct Node** head, int data){
+    struct Node* newNode = malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = *head;
+    *head = newNode;
+    return 1;
+}
+
+void insertionAtBeginning(struct Node** head, int data){
+    struct Node* newNode = malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = *head;
+    *head = newNode;
+}
+int main() {
+    struct Node* head = NULL;
+    createNode(&head, 57);
+    createNode(&head, 60);
+    printf("%d", head->data);
+    return 0;
+}
