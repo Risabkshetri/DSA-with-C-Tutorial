@@ -1,17 +1,16 @@
-// calculate the factorial of number using recusion
+// calculate the factorial using recursion
 
 #include<stdio.h>
 
-int factorial(int n){
-    if(n == 1){
-     return 1;
-    };
-    return n * factorial(n-1);
+int factorial(int num){
+    if(num == 0 || num == 1) return 1;
+    return num * factorial(num-1);
 };
 
-
 int main(){
-    int num = 3;
-    printf("factorial of 3 = %d", factorial(num));
+    int num;
+    printf("Enter any number: ");
+    scanf("%d", &num);
+    printf("Factorial of %d = %d", num, factorial(num));
     return 0;
 }
