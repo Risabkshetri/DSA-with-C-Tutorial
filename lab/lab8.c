@@ -77,11 +77,8 @@ int main()
     do
     {
         printf("\nQueue Operations Menu:\n");
-        printf("1. Enqueue\n");
-        printf("2. Dequeue\n");
-        printf("3. Peek\n");
-        printf("4. Print Queue\n");
-        printf("5. Exit\n");
+        printf("----------------------------\n");
+        printf("1. Enqueue\n2. Dequeue\n3. Peek\n4. Print Queue\n5. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
